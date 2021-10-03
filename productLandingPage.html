@@ -21,16 +21,39 @@
     position: relative;
   }
   #products-div{
-    height: 100vh;
+    height: 120vh;
     width: 100vw;
     background: linear-gradient(#DC143C, #FF5C5C, #FF5C5C);
     position: relative;
+    padding: 3px;
   }
   #about-div{
     height: 100vh;
     width: 100vw;
     background: linear-gradient(#4666FF, #6495ED, #6495ED);
     position: relative;
+    padding: 3px;
+  }
+  div#left{
+    float: right;
+    width: 38%;
+    color: blue;
+    writing-mode: tb-rl;
+    text-transform: uppercase;
+    font-size: 69px;
+    margin-top: 30px;
+    margin-right: 5px;
+    text-decoration: underline;
+  }
+  div#right{
+    float: left;
+    width: 60%;
+    margin-top: 60px;
+    text-align: center;
+    border-right: 1px solid darkcyan;
+    animation-name: changing-colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
   }
   nav{
     position: absolute;
@@ -80,6 +103,34 @@
   span#highlight{
     color: red;
   }
+  div#card-container{
+    padding: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid #404040;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    background: rgba(75,75,75, 0.17);
+    margin-bottom: 10px;
+    /*animation-name: changing-colors;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;*/
+  }
+  div#card-container:hover{
+    text-shadow: 0 0 7px #fff;
+  }
+  a{
+    text-decoration: none;
+  }
+  
+  /*animation*/
+  
+  @keyframes changing-colors{
+    0%{text-shadow: 0 0 7px #fff;}
+    25%{text-shadow: 0 0 7px red;}
+    50%{text-shadow: 0 0 7px green;}
+    75%{text-shadow: 0 0 7px blue;}
+  }
   </style>
   </head>
   <body>
@@ -96,8 +147,51 @@
       </p>
       </div>
       <div id="products-div">
+        <!--card start-->
+        <a href="">
+        <div id="card-container">
+          <h3 id="card-title">ABC Monitor</h3>
+          <p id="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+          <footer id="card-footer">
+            <small>by gaurav</small>
+          </footer>
+        </div>
+        </a>
+        <!--card end-->
+        
+        
+        <!--card start-->
+        <a href="">
+        <div id="card-container">
+          <h3 id="card-title">XYZ CPU</h3>
+          <p id="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+          <footer id="card-footer">
+            <small>by gaurav</small>
+          </footer>
+        </div>
+        </a>
+        <!--card end-->
+        
+        <!---card start-->
+        <a href="">
+        <div id="card-container">
+          <h3 id="card-title">Lorem Ipsum</h3>
+          <p id="card-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+          <footer id="card-footer">
+            <small>by gaurav</small>
+          </footer>
+        </div>
+        </a>
+        <!--card end-->
       </div>
       <div id="about-div">
+        <div id="left">
+          About Us
+        </div>
+        <div id="right">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+        </div>
       </div>
     </div>
   </body>
+  </html>
