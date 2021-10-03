@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Product Landing Page</title>
+  <style type="text/css" media="all">
+  /*1853x968*/
+  /*927x968*/
+  html,body{
+    scroll-behavior: smooth;
+    /*overflow: hidden;*/
+  }
+  .container{
+    height: 100%;
+    width: 100%;
+    color: white;
+  }
+  #home-div{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#000, #404040, #404040);
+    position: relative;
+  }
+  #products-div{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#DC143C, #FF5C5C, #FF5C5C);
+    position: relative;
+  }
+  #about-div{
+    height: 100vh;
+    width: 100vw;
+    background: linear-gradient(#4666FF, #6495ED, #6495ED);
+    position: relative;
+  }
+  nav{
+    position: absolute;
+    float: left;
+    bottom: 20px;
+    text-align: right;
+    letter-spacing: 2px;
+    padding: 20px;
+    border-right: 1px solid white;
+    position: fixed;
+    z-index: 1;
+  }
+  nav>a{
+    text-decoration: none;
+    color: white;
+  }
+  nav>a:hover{
+    background: #fff;
+    color: #404040;
+  }
+  h1#intro{
+    position: absolute;
+    top: 20vh;
+    left: 10vw;
+    right: 10vw;
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+  }
+  @media(min-width: 925px) and (min-height: 965px){
+    h1#intro{
+      font-size: 80px;
+    }
+    nav{
+      font-size: 30px;
+    }
+  }
+  #web-description{
+    position: absolute;
+    bottom: 20vh;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    left: 5vw;
+    right: 5vw;
+  }
+  span#highlight{
+    color: red;
+  }
+  </style>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <a href="#home-div">HOME</a><br/>
+        <a href="#products-div">OUR PRODUCTS</a><br/>
+        <a href="#about-div">ABOUT US</a>
+      </nav>
+      <div id="home-div">
+        <h1 id="intro">Welcome To<br/><small>smartGoose.com</small></h1>
+        <p id="web-description">A place which helps you build your own
+        <br/><span id="highlight">Personal Computer</span>
+      </p>
+      </div>
+      <div id="products-div">
+      </div>
+      <div id="about-div">
+      </div>
+    </div>
+  </body>
